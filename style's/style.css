@@ -1,0 +1,135 @@
+/* БАЗОВЫЕ ПАРАМЕТРЫ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* контентная часть */
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* шрифты */
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"),
+    url("font's/BebasNeueRegular.woff2") format("woff2"),
+    url("font's/BebasNeueRegular.woff") format("woff"),
+    url("font'/BebasNeueRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* HEADER */
+header {
+  background-color: #635854;
+  padding: 12px 0;
+  border-bottom: 4px solid #3596f5;
+}
+.navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 18, 75px;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+}
+.navbar_item {
+  text-align: center;
+  margin: 0 40px;
+}
+.navbar_link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.navbar_contacts {
+  color: #fff;
+  font-size: 14px;
+  text-align: right;
+}
+.navbar_text {
+  display: block;
+  margin-bottom: 4px;
+  line-height: 16px;
+}
+.navbar_contacts a {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar_contacts a:hover {
+  text-decoration: underline;
+}
+/* MAIN BLOCK */
+.main_image {
+  margin-top: 70px;
+}
+.svg_graphic path {
+  opacity: 0;
+}
+.svg_graphic path:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+path.current-floor {
+  opacity: 1;
+}
+/* MAIN INFO */
+.main_block {
+  display: flex;
+}
+.main_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  flex-grow: 1;
+}
+.info_title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+  color: #635854;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.counter_group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  align-items: center;
+}
+.counter_button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.counter {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  color: #635854;
+  font-size: 100px;
+}
+.button {
+  background: #3596f5;
+  border-radius: 6px;
+  padding: 16px 36px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.button:hover {
+  background-color: #2089f1;
+}
